@@ -412,7 +412,7 @@ const StorageCtrl = (function(){
       const currentItem = ItemCtrl.getCurrentItem();
   
       // Delete from data structure
-      ItemCtrl.deleteItem(clientInformation);
+      ItemCtrl.deleteItem(currentItem.id);
   
       // Delete from UI
       UICtrl.deleteListItem(currentItem.id);
